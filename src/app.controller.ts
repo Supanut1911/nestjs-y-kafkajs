@@ -16,4 +16,9 @@ export class AppController {
   async getMessage() {
     return await this.appService.handleSubscribe();
   }
+
+  @Get('/handlesub')
+  async handlesub() {
+    return await this.appService.handleSub();
+  }
 }
