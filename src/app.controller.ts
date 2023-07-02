@@ -11,4 +11,9 @@ export class AppController {
 
     return await this.appService.getHello();
   }
+
+  @Get('/consume')
+  async getMessage() {
+    return await this.appService.handleSubscribe();
+  }
 }
